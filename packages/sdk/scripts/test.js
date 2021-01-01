@@ -7,6 +7,16 @@ const run = async () => {
   });
 
   console.log({ summoner });
+
+  const matches = await api.match.getListByAccountId({
+    accountId: summoner.accountId,
+  });
+
+  const match = await api.match.getByGameId({
+    gameId: matches[0].gameId,
+  });
+
+  console.log({ match });
 };
 
 run();
