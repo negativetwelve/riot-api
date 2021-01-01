@@ -15,15 +15,12 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write",
-      "stylelint",
-      "eslint --fix"
+      "prettier --write"
     ]
   },
   "scripts": {
     "check:js": "prettier --check .",
     "format:js": "prettier --write .",
-    "lint:js": "eslint --max-warnings 0 .",
-    "lint:style": "stylelint ."
+    "lint:js": "eslint --max-warnings 0 ."
   }
 }
