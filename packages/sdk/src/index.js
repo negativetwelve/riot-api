@@ -1,1 +1,1 @@
-export {default as RiotAPI} from './RiotAPI';
+export { default as RiotAPI } from "./RiotAPI.js";
