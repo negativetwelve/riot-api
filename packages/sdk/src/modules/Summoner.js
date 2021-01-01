@@ -40,10 +40,6 @@ class Summoner {
   get accountId() {
     return this.props.accountId;
   }
-
-  // --------------------------------------------------
-  // Methods
-  // --------------------------------------------------
 }
 
 export default Summoner;
