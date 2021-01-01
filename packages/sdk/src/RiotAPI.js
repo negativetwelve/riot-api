@@ -2,6 +2,7 @@
 import API from "handy-api";
 
 // App
+import MatchAPI from "./apis/MatchAPI.js";
 import SummonerAPI from "./apis/SummonerAPI.js";
 
 /**
@@ -41,6 +42,10 @@ class RiotAPI {
   // --------------------------------------------------
   // Methods
   // --------------------------------------------------
+  get match() {
+    return new MatchAPI({ api: this });
+  }
+
   get summoner() {
     return new SummonerAPI({ api: this });
   }
