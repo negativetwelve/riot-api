@@ -2,7 +2,7 @@
 import API from "handy-api";
 
 // App
-import Summoner from "./modules/Summoner.js";
+import SummonerAPI from "./modules/SummonerAPI.js";
 
 /**
  * Represents the client that connects to the Riot Games API.
@@ -42,7 +42,7 @@ class RiotAPI {
   // Methods
   // --------------------------------------------------
   get summoner() {
-    return Summoner;
+    return new SummonerAPI({ api: this });
   }
 }
 
