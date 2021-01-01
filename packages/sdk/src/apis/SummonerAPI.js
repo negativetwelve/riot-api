@@ -1,5 +1,5 @@
 // App
-import Summoner from "./Summoner.js";
+import Summoner from "../models/Summoner.js";
 
 /**
  * Represents the Summoner API

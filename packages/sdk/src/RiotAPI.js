@@ -2,7 +2,7 @@
 import API from "handy-api";
 
 // App
-import SummonerAPI from "./modules/SummonerAPI.js";
+import SummonerAPI from "./apis/SummonerAPI.js";
 
 /**
  * Represents the client that connects to the Riot Games API.
