@@ -5,8 +5,8 @@ class Summoner {
   // --------------------------------------------------
   // GET
   // --------------------------------------------------
-  static async getBySummonerName({ summonerName }) {
-    const response = await client.request({
+  static async getBySummonerName({ api, summonerName }) {
+    const response = await api.request({
       method: "GET",
       path: `/lol/summoner/v4/summoners/by-name/${summonerName}`,
       params: {},

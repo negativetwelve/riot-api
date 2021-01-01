@@ -2,7 +2,7 @@
 import API from "handy-api";
 
 // App
-import Summoner from "./modules/Summoner";
+import Summoner from "./modules/Summoner.js";
 
 /**
  * Represents the client that connects to the Riot Games API.
@@ -14,7 +14,7 @@ class RiotAPI {
   constructor({ apiKey, region }) {
     const baseUrl = `https://${region}.api.riotgames.com`;
     this.apiKey = apiKey;
-    this.api = new API({ baseUrl });
+    this.api = new API.default({ baseUrl });
   }
 
   get headers() {
