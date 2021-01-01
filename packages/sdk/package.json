@@ -1,0 +1,23 @@
+{
+  "name": "riot-sdk",
+  "version": "0.1.0",
+  "description": "Node SDK for Riot Games.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/riot-games",
+  "repository": "https://github.com/negativetwelve/riot-games/tree/master/packages/sdk",
+  "keywords": [
+  ],
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "handy-api": "1.5.7"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
